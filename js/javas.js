@@ -20,9 +20,9 @@ function gerarpass() {
 
 
 function copypassword() {
-    var copyText = document.getElementById("passoword");
+    var copyText = document.getElementById("password");
     copyText.select();
     copyText.setSelectionRange(0, 99999)
     document.execCommand("copy");
-    alert("Sua senha é: " + copyText.value);
+    alert("senha copiada!!");
 }
