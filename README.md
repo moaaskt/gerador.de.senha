@@ -1,7 +1,3 @@
-<p align="center">
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/SdwZGpL/Captura-de-tela-2022-09-07-200659.png" alt="Captura-de-tela-2022-09-07-200659" height="220px"></a>
-
-</p>
 
 <h1 align="center"> Gerador de senhas aleatórias  </h1>
 
