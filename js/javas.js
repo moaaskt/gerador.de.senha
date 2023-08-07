@@ -26,3 +26,23 @@ function copypassword() {
     document.execCommand("copy");
     alert("senha copiada!!");
 }
+
+const passwordInput = document.getElementById("password");
+const passwordStrengthDisplay = document.getElementById("password-strength");
+
+passwordInput.addEventListener("input", function () {
+    const password = passwordInput.value;
+    const result = zxcvbn(password);
+    const strength = result.score;
+    const feedback = result.feedback.suggestions.join(" ");
+
+    const strengthText = [
+        "Muito Fraca",
+        "Fraca",
+        "Razoável",
+        "Boa",
+        "Muito Boa"
+    ][strength];
+
+    passwordStrengthDisplay.innerHTML = `Força da Senha: ${strengthText}. ${feedback}`;
+});

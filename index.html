@@ -7,28 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <title>Gerador de Senhas</title>
 </head>
 
 <body>
-
-    <div class="box">
-        <h2>Gerador de senhas aleatórias</h2>
-        <input type="text" placeholder="Criar senha" id="password" readonly>
-        <table>
-            <th>
-                <div id="button" class="btn1" onclick="gerarpass()"> Gerar</div>
-            </th>
-            <th><a id="button" class="btn2" onclick="copypassword()">Copy</a> </th>
-
-        </table>
-
-
+    <div class="container">
+        <div class="box">
+            <h2>Gerador de senhas aleatórias</h2>
+            
+           
+    <input type="text" placeholder="Criar senha" id="password" readonly>
+            
+           
+    <div>
+                
+               
+    <button class="btn btn-primary" onclick="gerarpass()">Gerar</button>
+                
+                
+    <button class="btn btn-success" onclick="copypassword()">Copiar</button>
+            
+           
     </div>
-
-
-
+            
+            
+    <div id="password-strength"></div>
+        
+       
+    </div>
+    
+    
+    </div>
+    
     <script src="js/javas.js"></script>
 
 </body>
